@@ -16,17 +16,17 @@ in order to avoid collision under every circumstances, it becomes unable to carr
 successful merge on the highway, or make a left turn at an intersection, as it can not
 distinguish between situations when merging is considered safe and when it is not.
 
-In my Master Thesis first, I implement a social-attention architecture with the DQN
+In my Master Thesis first, I implement a social-attention architecture with the DQN (Deep Q-Network)
 *reinforcement learning* algorithm based on the *Social Attention for Autonomous Decision-Making in Dense Traffic*
 article from *Edouard Leurent* and *Jean Mercat*. With
 this architecture, the self-driving agent is able to focus, '*pay attention*' to the behaviour
 of other vehicles in traffic and weight their importance in terms of the current situation.
 This structure is tested in a simulation, where the self-driving vehicle has to make a left
 turn at an intersection with dense traffic. Then, I modify the architecture based on my
-own idea, to use the self-implemented PPO algorithm for training. In my work, the <Python>
-programming language with the <PyTorch> *deep learning* module is used for implementing
+own idea, to use the self-implemented PPO (Proximal Policy Optimization) algorithm for training. In my work, the `Python`
+programming language with the `PyTorch` *deep learning* module is used for implementing
 the attention-based architecture and the reinforcement learning algorithms. As simulation
-environment, the <highway-env> is selected. This is a simple training environment (or
+environment, the `highway-env` is selected. This is a simple training environment (or
 '*gym*') library which is capable of simulating a wide variety of different traffic situations
 while requiring relatively low computational capacity compared to other, more complex
 environments.
