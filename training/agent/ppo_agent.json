@@ -1,0 +1,11 @@
+{
+    "type": "PPOAgent",
+    "eps_clip": 0.25,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "K_epochs": 50,
+    "action_std_init": 0.6,
+    "action_std_decay_rate": 0.05,
+    "min_action_std": 0.1,
+    "update_timestep": 128
+}

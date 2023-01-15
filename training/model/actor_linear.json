@@ -1,0 +1,8 @@
+{
+    "type": "FullyConnectedNetwork",
+    "layers": [64, 64, 64],
+    "activation": "TANH",
+    "reshape": true,
+    "in": 7,
+    "softmax": true
+}

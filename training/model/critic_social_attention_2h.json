@@ -1,0 +1,34 @@
+{
+    "type": "SocialAttentionNetwork",
+    "embedding_layer": {
+        "type": "FullyConnectedNetwork",
+        "layers": [64, 64],
+        "reshape": false,
+        "softmax": false,
+        "in": 7
+    },
+    "others_embedding_layer": {
+        "type": "FullyConnectedNetwork",
+        "layers": [64, 64],
+        "reshape": false,
+        "softmax": false,
+        "in": 7
+    },
+    "attention_layer": {
+        "type": "EgoAttention",
+        "feature_size": 64,
+        "heads": 1
+    },
+    "output_layer": {
+        "type": "FullyConnectedNetwork",
+        "layers": [64, 64],
+        "reshape": false,
+        "softmax": false
+    },
+    "out": 1,
+    "model": {
+        "attention_layer": {
+            "heads": 2
+        }
+    }
+}
